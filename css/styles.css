@@ -1,6 +1,9 @@
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --focus-color: #2196f3;
 }
 
 .list,
@@ -9,7 +12,8 @@
 .work-list,
 .team-list,
 .menu-address,
-.portfolio-list {
+.portfolio-list,
+.portfolio-filter {
   list-style: none;
 }
 
@@ -34,7 +38,7 @@ body {
   color: #000000;
 }
 .color-web {
-  color: #2196f3;
+  color: var(--focus-color);
 }
 .section-title {
   font-family: var(--main-font);
@@ -43,7 +47,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 /* ========== END Components ========== */
 
@@ -57,7 +61,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .email-link,
@@ -66,7 +70,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 
 .menu-link:hover,
@@ -75,7 +79,7 @@ body {
 .email-link:focus,
 .tel-link:hover,
 .tel-link:focus {
-  color: #2196f3;
+  color: var(--focus-color);
 }
 /*========== END Header ==========*/
 
@@ -102,7 +106,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background: #2196f3;
+  background: var(--focus-color);
   cursor: pointer;
 }
 
@@ -120,7 +124,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .description {
@@ -129,7 +133,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 /*========== END FEATURES ========== */
 
@@ -148,7 +152,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 .team-name-description {
   font-family: var(--main-font);
@@ -156,7 +160,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 /*========== END TEAM ========== */
 
@@ -202,18 +206,19 @@ body {
 
 /*========== PORTFOLIO ========== PAGE =============== */
 .portfolio-button {
+  font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
   cursor: pointer;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: white;
-  background-color: #2196f3;
+  background-color: var(--focus-color);
 }
 
 .portfolio-image-title {
@@ -221,7 +226,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .portfolio-image-description {
@@ -229,5 +234,5 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
